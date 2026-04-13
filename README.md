@@ -6,4 +6,5 @@ The project aim to create a system to demonstrate RAGs usage with LLM in a produ
 # Frontend
 # Backend
 # Data
+The data coming from https://www.set.or.th/th/home by using STRUCTURE pdf files for the ONE Report data in 56-1 form
 # Database
