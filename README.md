@@ -4,6 +4,11 @@ In this part of the githiub and the RAGs implementation owner of this repository
 
 # Description
 The project aim to create a system to demonstrate RAGs usage with LLM in a production level using Next.js framework in a chatbot-ui as a web-based. In this project the work has been done to completely demonstrate the usage and the concept of the RAG integrating with the LLM but there is some adjustion needed eg., evaluation and parameter tuning to upgrade the efficient of the RAG retrieval performance since the first phase is only the rougly evaluaiton on the retriveval performane. Owner adjust and continue to develop if there is more convinient and possible time.
+# Step to use this applciation
+1. navigate to the backend folder then create your own .env files and put the parameter like this
+GOOGLE_API_KEY=Your gemini api key
+PINECONE_API_KEY=Your pinecone api key
+
 # About the evaluation part
 Evaluation Strategy
 - Phase 1: Initial Implementation & Manual Verification

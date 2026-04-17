@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  # 1. The Python Backend
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env # This ensures Docker can read your API keys!
+    restart: unless-stopped
+
+  # 2. The Next.js Frontend
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend # Wait for the backend to turn on before starting the website
+    restart: unless-stopped
