@@ -21,8 +21,8 @@ cd RAGs-Project
 You must provide your own API keys for the AI and the Database. Navigate into the `backend` folder, create a new file named exactly `.env`, and add your keys:
 ```bash
 # Inside backend/.env
-GOOGLE_API_KEY=your_gemini_api_key_here
-PINECONE_API_KEY=your_pinecone_api_key_here
+GOOGLE_API_KEY=your_gemini_api_key
+PINECONE_API_KEY=your_pinecone_api_key
 ```
 
 **3. Start the Application via Docker**
