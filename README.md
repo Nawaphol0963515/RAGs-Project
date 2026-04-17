@@ -66,11 +66,11 @@ In a real enterprise, you cannot just test 5 questions yourself and deploy. We n
 
 ## Frontend
 * **Tech Stack:** Next.js (App Router), React, TypeScript, and Tailwind CSS.
-* **Architecture & Style:** The frontend is a modern, responsive web application designed with a professional "Dark Mode" financial aesthetic (`slate-950`). It acts purely as the presentation layer. It manages user chat state and automatically communicates with the Python backend via REST API (`POST /chat`), displaying the AI's answers and citing the source documents directly in the UI.
+* **Architecture & Style:** The frontend is a responsive web application designed to acts purely as the presentation layer. It manages user chat state and automatically communicates with the Python backend via REST API (`POST /chat`), displaying the AI's answers and citing the source documents directly in the UI.
 
 ## Backend
-* **Tech Stack:** FastAPI (Python 3.11), Uvicorn, LangChain, and Google Gemini (1.5 Flash).
-* **Architecture & Style:** The backend acts as the "Brain" of the application. It receives user questions from the Next.js frontend, connects to the vector database to retrieve financial context, and constructs a strict prompt forcing the LLM (Gemini) to answer *only* using the retrieved documents. It utilizes LangChain's retrieval chain logic to manage the flow of data securely and efficiently.
+* **Tech Stack:** FastAPI (Python 3.11), Uvicorn, LangChain, and Google Gemini 3 flash model.
+* **Architecture & Style:** The backend receives user questions from the Next.js frontend, connects to the vector database to retrieve context, and constructs a strict prompt forcing the LLM (Gemini) to answer *only* using the retrieved documents. It utilizes LangChain's retrieval chain logic to manage the flow of data securely and efficiently.
 
 ## Data
 The data comes from the Stock Exchange of Thailand ([https://www.set.or.th/th/home](https://www.set.or.th/th/home)) by utilizing **STRUCTURE PDF** files for the "56-1 ONE Report" data. 
